@@ -3,6 +3,7 @@ package com.bedrockminer.tutorial;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -17,13 +18,16 @@ public class Main {
 	@Instance
 	public static Main instance = new Main();
 
+	@SidedProxy(clientSide="com.bedrockminer.tutorial.ClientProxy", serverSide="com.bedrockminer.tutorial.ServerProxy")
+	public static CommonProxy proxy;
+
 	/**
 	 * Run before anything else. Read your config, create blocks, items, etc, and
 	 * register them with the GameRegistry.
 	 */
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e) {
-
+		proxy.preInit(e);
 	}
 
 	/**
@@ -31,7 +35,7 @@ public class Main {
 	 */
 	@EventHandler
 	public void init(FMLInitializationEvent e) {
-
+		proxy.init(e);
 	}
 
 	/**
@@ -39,6 +43,6 @@ public class Main {
 	 */
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent e) {
-
+		proxy.postInit(e);
 	}
 }
