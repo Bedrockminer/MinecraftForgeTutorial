@@ -1,6 +1,7 @@
 package com.bedrockminer.tutorial;
 
 import com.bedrockminer.tutorial.block.ModBlocks;
+import com.bedrockminer.tutorial.crafting.ModCrafting;
 import com.bedrockminer.tutorial.item.ModItems;
 
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -12,6 +13,7 @@ public class CommonProxy {
 	public void preInit(FMLPreInitializationEvent e) {
 		ModItems.init();
 		ModBlocks.init();
+		ModCrafting.init();
 	}
 
 	public void init(FMLInitializationEvent e) {
