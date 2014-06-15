@@ -9,10 +9,12 @@ import net.minecraft.item.Item;
 public final class ModItems {
 
 	public static Item tutorialItem;
+	public static Item metaitem;
 
 	public static final void init() {
-		tutorialItem = new Item().setUnlocalizedName("tutorialItem").setCreativeTab(CreativeTabs.tabMisc).setTextureName(Main.MODID + ":tutorialItem");
-		GameRegistry.registerItem(tutorialItem, "tutorialItem");
+		GameRegistry.registerItem(tutorialItem = new Item().setUnlocalizedName("tutorialItem").setCreativeTab(CreativeTabs.tabMisc).setTextureName(Main.MODID + ":tutorialItem"), "tutorialItem");
+
+		GameRegistry.registerItem(metaitem = new MetaItem("metaitem"), "metaitem");
 	}
 
 }

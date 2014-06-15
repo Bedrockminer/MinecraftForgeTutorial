@@ -1,3 +1,15 @@
 item.tutorialItem.name=Tutorial Item
 tile.tutorialBlock.name=Tutorial Block
 tile.multitexture.name=MultiTexture Block™
+tile.metablock_white.name=Metablock 0 (White)
+tile.metablock_black.name=Metablock 1 (Black)
+tile.metablock_red.name=Metablock 2 (Red)
+tile.metablock_green.name=Metablock 3 (Green)
+tile.metablock_yellow.name=Metablock 4 (Yellow)
+tile.metablock_blue.name=Metablock 5 (Blue)
+item.metaitem_white.name=Metaitem 0 (White)
+item.metaitem_black.name=Metaitem 1 (Black)
+item.metaitem_red.name=Metaitem 2 (Red)
+item.metaitem_green.name=Metaitem 3 (Green)
+item.metaitem_yellow.name=Metaitem 4 (Yellow)
+item.metaitem_blue.name=Metaitem 5 (Blue)
