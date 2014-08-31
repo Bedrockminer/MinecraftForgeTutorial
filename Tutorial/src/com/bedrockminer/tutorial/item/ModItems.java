@@ -27,9 +27,9 @@ public final class ModItems {
 
 		//Sword and Tools
 		GameRegistry.registerItem(tutorialPickaxe	= new ItemModPickaxe("tutorial_pickaxe", TUTORIAL), "tutorial_pickaxe");
-		GameRegistry.registerItem(tutorialAxe 		= new ItemModPickaxe("tutorial_axe", TUTORIAL), "tutorial_axe");
-		GameRegistry.registerItem(tutorialSpade 	= new ItemModPickaxe("tutorial_spade", TUTORIAL), "tutorial_spade");
-		GameRegistry.registerItem(tutorialHoe	 	= new ItemModPickaxe("tutorial_hoe", TUTORIAL), "tutorial_hoe");
-		GameRegistry.registerItem(tutorialSword 	= new ItemModPickaxe("tutorial_sword", TUTORIAL), "tutorial_sword");
+		GameRegistry.registerItem(tutorialAxe 		= new ItemModAxe("tutorial_axe", TUTORIAL), "tutorial_axe");
+		GameRegistry.registerItem(tutorialSpade 	= new ItemModSpade("tutorial_spade", TUTORIAL), "tutorial_spade");
+		GameRegistry.registerItem(tutorialHoe	 	= new ItemModHoe("tutorial_hoe", TUTORIAL), "tutorial_hoe");
+		GameRegistry.registerItem(tutorialSword 	= new ItemModSword("tutorial_sword", TUTORIAL), "tutorial_sword");
 	}
 }

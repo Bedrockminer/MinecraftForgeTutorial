@@ -1,8 +1,8 @@
 package com.bedrockminer.tutorial.item;
 
-import com.bedrockminer.tutorial.Main;
-
 import net.minecraft.item.ItemSword;
+
+import com.bedrockminer.tutorial.Main;
 
 public class ItemModSword extends ItemSword {
 
@@ -13,3 +13,4 @@ public class ItemModSword extends ItemSword {
 	}
 
 }
+
