@@ -21,7 +21,7 @@ public class Main {
 	public static Main instance = new Main();
 
 	@SidedProxy(clientSide="com.bedrockminer.tutorial.proxies.ClientProxy", serverSide="com.bedrockminer.tutorial.proxies.ServerProxy")
-	public CommonProxy proxy;
+	public static CommonProxy proxy;
 
 	@EventHandler
 	public void onPreInit(FMLPreInitializationEvent e) {
