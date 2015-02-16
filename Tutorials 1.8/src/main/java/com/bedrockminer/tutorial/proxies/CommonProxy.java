@@ -1,5 +1,6 @@
 package com.bedrockminer.tutorial.proxies;
 
+import com.bedrockminer.tutorial.blocks.ModBlocks;
 import com.bedrockminer.tutorial.items.ModItems;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -9,6 +10,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class CommonProxy {
 
 	public void preInit(FMLPreInitializationEvent e) {
+		ModBlocks.createBlocks();
 		ModItems.createItems();
 	}
 

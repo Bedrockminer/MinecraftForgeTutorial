@@ -1,5 +1,6 @@
 package com.bedrockminer.tutorial.proxies;
 
+import com.bedrockminer.tutorial.client.render.blocks.BlockRenderRegister;
 import com.bedrockminer.tutorial.client.render.items.ItemRenderRegister;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -17,6 +18,7 @@ public class ClientProxy extends CommonProxy {
 	public void init(FMLInitializationEvent e) {
 		super.init(e);
 
+		BlockRenderRegister.registerBlockRenderer();
 		ItemRenderRegister.registerItemRenderer();
 	}
 
